@@ -1,0 +1,13 @@
+{
+  "name": "WORM AI VIDEO STUDIO",
+  "short_name": "WORM VIDEO",
+  "description": "Free prompt helper for AI video generation",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0b1024",
+  "theme_color": "#10152f",
+  "lang": "ar",
+  "dir": "rtl",
+  "icons": []
+}

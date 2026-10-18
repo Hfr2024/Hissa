@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#10152f">
+<meta name="description" content="WORM AI VIDEO STUDIO — مساعد مجاني لصناعة أوصاف فيديو الذكاء الاصطناعي">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+<title>WORM AI VIDEO STUDIO</title>
+</head>
+<body>
+<header class="hero">
+  <div class="logo">W</div>
+  <p class="eyebrow">FREE MOBILE CREATOR</p>
+  <h1>WORM AI <span>VIDEO STUDIO</span></h1>
+  <p class="sub">اكتب فكرتك، جهّز وصفًا احترافيًا، وافتح أدوات الفيديو المجانية المتاحة.</p>
+  <div class="free-tag">✦ بدون API مدفوع</div>
+</header>
+<main>
+  <section class="panel">
+    <h2>🎬 اصنع وصف الفيديو</h2>
+    <label for="idea">فكرة الفيديو</label>
+    <textarea id="idea" rows="4" placeholder="مثال: جزرة كرتونية لطيفة تتكلم باللهجة المصرية داخل مطبخ ملون..."></textarea>
+    <div class="two">
+      <div><label for="style">الأسلوب</label><select id="style"><option>3D animation cinematic</option><option>Realistic cinematic</option><option>Pixar-like family animation</option><option>Anime</option><option>Clay animation</option></select></div>
+      <div><label for="ratio">المقاس</label><select id="ratio"><option value="9:16">عمودي 9:16 — Shorts / Reels</option><option value="16:9">أفقي 16:9 — YouTube</option><option value="1:1">مربع 1:1</option></select></div>
+    </div>
+    <div class="two">
+      <div><label for="length">المدة المقترحة</label><select id="length"><option>5–8 seconds</option><option>10 seconds</option><option>15 seconds</option><option>30 seconds</option></select></div>
+      <div><label for="language">لغة الحوار</label><select id="language"><option>Egyptian Arabic</option><option>Modern Standard Arabic</option><option>English</option><option>No dialogue</option></select></div>
+    </div>
+    <label for="details">تفاصيل إضافية (اختياري)</label>
+    <input id="details" placeholder="مثال: ألوان زاهية، حركة كاميرا، نهاية مضحكة">
+    <button class="primary" id="make">✨ جهّز البرومبت</button>
+  </section>
+  <section class="panel">
+    <div class="section-head"><h2>🪄 البرومبت الجاهز</h2><button class="small" id="copy">نسخ</button></div>
+    <textarea id="output" rows="8" placeholder="سيظهر وصف الفيديو هنا..." readonly></textarea>
+    <p id="notice" class="notice" aria-live="polite">اكتب فكرتك ثم اضغط «جهّز البرومبت».</p>
+    <button class="secondary" id="save">⬇️ حفظ البرومبت كملف TXT</button>
+  </section>
+  <section class="panel tools">
+    <h2>🌐 افتح أدوات الفيديو</h2>
+    <p class="muted">هذه روابط لفتح مواقع خارجية. قد تحتاج حسابًا أو يكون الاستخدام المجاني محدودًا، ولا نضمن توفر التوليد المجاني دائمًا.</p>
+    <a href="https://huggingface.co/spaces?search=text%20to%20video" target="_blank" rel="noopener">استكشاف نماذج Text-to-Video على Hugging Face ↗</a>
+    <a href="https://www.google.com/search?q=free+AI+text+to+video+generator" target="_blank" rel="noopener">البحث عن مولدات فيديو مجانية ↗</a>
+    <a href="https://www.google.com/search?q=open+source+Wan+text+to+video+demo" target="_blank" rel="noopener">البحث عن عروض Wan المفتوحة المصدر ↗</a>
+  </section>
+  <section class="warning"><strong>بصراحة:</strong> التطبيق نفسه مجاني، لكنه لا يشغّل نموذج توليد فيديو ثقيلًا داخل الهاتف. توليد الفيديو الفعلي يتم على موقع خارجي وقد تكون له حدود مجانية أو طابور انتظار. لا توجد طريقة مضمونة لتوليد فيديوهات AI بلا حدود مجانًا على أي موبايل فقط.</section>
+</main>
+<footer>WORM AI VIDEO STUDIO · Free helper edition</footer>
+<script src="app.js"></script>
+</body>
+</html>
